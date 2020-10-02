@@ -4,10 +4,7 @@ from karmabot.db import db_session
 from karmabot.db.karma_user import KarmaUser
 from karmabot.karma import Karma
 from karmabot.settings import SLACK_CLIENT
-from karmabot.slack import (
-    format_user_id,
-    get_available_username,
-)
+from karmabot.slack import format_user_id, get_available_username
 
 
 # KarmaUser

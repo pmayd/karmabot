@@ -1,11 +1,6 @@
-import pytest
-
 from karmabot.commands.welcome import welcome_user
 from karmabot.settings import KARMABOT_ID, SLACK_CLIENT
-from karmabot.slack import (
-    GENERAL_CHANNEL,
-    parse_next_msg,
-)
+from karmabot.slack import GENERAL_CHANNEL, parse_next_msg
 
 
 # Testing

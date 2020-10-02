@@ -1,18 +1,17 @@
-import pytest
-
 from datetime import datetime
+
+import pytest
+from slackclient import SlackClient as RealSlackClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
-from slackclient import SlackClient as RealSlackClient
 
 import karmabot.commands.topchannels
-
 from karmabot.db import db_session
 from karmabot.db.karma_transaction import KarmaTransaction
 from karmabot.db.karma_user import KarmaUser
 from karmabot.settings import KARMABOT_ID
-from .slack_testdata import TEST_CHANNEL_HISTORY, TEST_CHANNEL_INFO, TEST_USERINFO
 
+from .slack_testdata import TEST_CHANNEL_HISTORY, TEST_CHANNEL_INFO, TEST_USERINFO
 
 FAKE_NOW = datetime(2017, 8, 23)
 

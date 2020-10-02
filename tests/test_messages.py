@@ -1,9 +1,7 @@
 # Messages / Slack
 import pytest
 
-from karmabot.slack import (
-    perform_text_replacements,
-)
+from karmabot.slack import perform_text_replacements
 
 
 def test_get_cmd():

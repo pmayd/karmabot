@@ -1,7 +1,8 @@
 import os
+from unittest.mock import patch
+
 import pytest
 
-from unittest.mock import patch
 from karmabot.commands.joke import _get_closest_category
 from karmabot.commands.topchannels import Channel, calc_channel_score
 from karmabot.db import db_session
